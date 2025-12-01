@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altre Partite - Hexagons</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/black_hexagon.png">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <a href="../index.html"><button class="nav-btn">Home</button></a>
+            <a href="../about/index.html"><button class="nav-btn">About</button></a>
+            <a href="games.html"><button class="nav-btn active">Partite</button></a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-box">
+                <h2 class="content-title">
+                    <span class="hexagon-icon" style="width: 26px; height: 23px;"></span>
+                    Altre Partite
+                    <span class="hexagon-icon" style="width: 26px; height: 23px;"></span>
+                </h2>
+                <p style="text-align: center; margin-bottom: 1.5rem; color: var(--text-light);">
+                    Tutte le sfide disponibili:
+                </p>
+                <div id="gameList" class="game-list">
+                    <!-- Games will be loaded dynamically -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar"></div>
+
+    </div>
+
+    <script src="../js/games-list.js"></script>
+</body>
+</html>
