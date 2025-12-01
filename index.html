@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagons - Caccia al Tesoro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/black_hexagon.png">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <a href="index.html"><button class="nav-btn active">Home</button></a>
+            <a href="about/index.html"><button class="nav-btn">About</button></a>
+            <a href="partite/index.html"><button class="nav-btn">Partite</button></a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Screen -->
+            <div id="welcomeScreen" class="welcome-screen">
+                <h1 class="welcome-title">
+                    <span class="hexagon-icon"></span>
+                    Hexagons
+                    <span class="hexagon-icon"></span>
+                </h1>
+                <p class="welcome-subtitle">
+                    Una caccia al tesoro online tra scienze e arti
+                </p>
+                <button class="start-btn" id="startButton">Inizia</button>
+                <button class="help-btn" id="howToPlayButton">Come si gioca?</button>
+            </div>
+
+            <!-- How to Play Modal -->
+            <div id="howToPlayModal" class="modal hidden">
+                <div class="modal-content">
+                    <button class="modal-close" id="closeModal">&times;</button>
+                    <h2>Come si gioca</h2>
+                    <div class="modal-body">
+                        <p><strong>Hexagons</strong> è una caccia al tesoro online che mette alla prova la tua curiosità e le tue capacità di ricerca.</p>
+            
+                        <h3>📋 Struttura del gioco:</h3>
+                        <ul>
+                            <li>Ogni partita è composta da 6 livelli. L'obiettivo è completarli tutti rispondendo correttamente alle domande</li>
+                            <li>Non servono mai conoscenze ulteriori: ogni domanda è sempre risolvibile con le informazioni che trovi nel sito</li>
+                            <li>Dopo una risposta errata, apparirà un suggerimento aggiuntivo per aiutarti</li>
+                            <li>In ogni livello guadagnerai un indizio, che ti servirà per rispondere alla domanda finale</li>
+                        </ul>
+            
+                        <h3>💡 Consigli:</h3>
+                        <ul>
+                            <li>Le risposte sono case-insensitive (maiuscole/minuscole non contano)</li>
+                            <li>Usa i pulsanti freccia per rivedere i livelli completati</li>
+                            <li>Alcune domande sono più difficili di altre, ma ricorda che sul sito troverai sempre la risposta</li>
+                        </ul>
+                    </div>
+                    <button class="modal-btn" id="closeModalBtn">Ho capito!</button>
+                </div>
+            </div>
+
+            <!-- Game Screen -->
+            <div id="gameScreen" class="game-screen hidden">
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <button id="prevLevel" class="arrow-btn" aria-label="Livello precedente">🢀</button>
+                    <div id="progressBar" class="progress-bar"></div>
+                    <button id="nextLevel" class="arrow-btn" aria-label="Livello successivo">🢂</button>
+                </div>
+
+                <div class="game-content">
+                    <h2 id="clueTitle" class="clue-title"></h2>
+                    <p id="clueText" class="clue-text"></p>
+                    <div id="clueImage" class="clue-image"></div>
+                </div>
+                    
+                <div class="answer-section">
+
+                    <div class="input-group">
+                        <input type="text" id="answerInput" class="answer-input" placeholder="Inserisci la tua risposta">
+                        <button id="submitAnswer" class="submit-btn">Verifica</button>
+                    </div>
+                        
+                    <div id="extraClue" class="extra-clue hidden"></div>
+
+                    <div id="feedbackMessage" class="feedback-message hidden"></div>
+
+                </div>
+
+                <!-- Completion Screen -->
+                <div id="completionScreen" class="completion-screen hidden">
+                    <h2>🎉 Congratulazioni! 🎉</h2>
+                    <div class="completion-animation">
+                        <div class="completion-hexagon"></div>
+                        <div class="completion-hexagon"></div>
+                        <div class="completion-hexagon"></div>
+                        <div class="completion-hexagon"></div>
+                        <div class="completion-hexagon"></div>
+                        <div class="completion-hexagon"></div>
+                    </div>
+                    <p>Hai completato tutti i livelli della caccia al tesoro!</p>
+                    <iframe id="completionForm" class="completion-iframe hidden"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSf_EbD043wB0cYU-qiuO5UATdZfRm2MB0wJV6ONVtHmkWjbWg/viewform?embedded=true">
+                    </iframe>
+                    <button id="resetButton" class="reset-btn">Gioca un'altra partita</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar"></div>
+
+        <!-- Sound Toggle -->
+        <button id="soundToggle" class="sound-toggle" aria-label="Toggle sound" title="Attiva/Disattiva suoni">
+            🔊
+        </button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
