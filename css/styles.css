@@ -966,6 +966,10 @@ body {
     height: 28px;
     font-size: 1rem;
   }
+
+  .content-box {
+    font-size: 0.9rem;
+  }
   
   .completion-screen h2 {
     font-size: 1.6rem;
