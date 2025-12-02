@@ -93,7 +93,7 @@ const GAME_DATA = {
         {
           "title": "Sibylle",
           "text": "Sul sito del <a href='https://collections.louvre.fr/en/' target='_blank'>Louvre</a> cerca un dipinto di Giovanni Paolo Panini che rappresenta una sibilla (<i>sibylle</i>) tra rovine antiche. Quante persone sono rappresentate in questa scena?",
-          "answer": ["4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8", "9043402da0ddf12f45b1a71e6925019336c448f3e11e5601d1bfdde8f338a463"],
+          "answer": ["4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5", "30dc09b02a5d38dd3af0115b4c3b17b976880cfd7386584c0a659f6350862c99"],
           "extra": "Indizio per la domanda finale: <b>1843</b>",
           "picture": "images/10 - Sibylle.jpg",
           "errorMessage": "Usa l’advanced search per trovare più velocemente il quadro"
