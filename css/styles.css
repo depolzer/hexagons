@@ -1065,7 +1065,7 @@ body {
 }
 
 /* Short screens (landscape tablets, small laptops) */
-@media (max-height: 700px) {
+@media (max-height: 700px) and (min-width: 769px) {
     /* Shrink font sizes across the entire game screen */
     .game-screen {
         font-size: 0.85rem;  /* Base font size reduction */
@@ -1162,7 +1162,7 @@ body {
 }
 
 /* Very short screens (< 600px height) */
-@media (max-height: 600px) {
+@media (max-height: 600px) and (min-width: 769px) {
     .game-screen {
         font-size: 0.8rem;
     }
