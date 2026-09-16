@@ -20,7 +20,14 @@ const GAME_DATA = {
       {
         "title": "Un vaso etrusco",
         "text": "Sul sito del <a href='https://www.metmuseum.org/art/collection' target='_blank'>Metropolitan Museum of Art</a> di New York, trova un lekythos etrusco. Quanto è alto (in cm) questo manufatto?",
-        "answer": ["c621ffab314c9d540ebc364864a0f6e834fb14e6e90d1c30c30d6f2322c0c522", "e0b04046fbfbc96f3437e4718a8a15e7eb5936298a36a8c2039226d1c5f41845"],
+        "answer": [
+          "c621ffab314c9d540ebc364864a0f6e834fb14e6e90d1c30c30d6f2322c0c522",
+          "e0b04046fbfbc96f3437e4718a8a15e7eb5936298a36a8c2039226d1c5f41845",
+          "abb565d0a2ea1146294fde087c5d98df3f55fd55ca3e7a9a83a79b21d655f157",
+          "4f3b10bbf3c50a361bda93d9258f5789cf759d914b5e6f8d7cf93e0be5152742",
+          "2de105f969ba4f6145d1d5c511fd1bfd8bf2162a04d1bd91db6054725e55ea6a",
+          "9f2b251abba51ee24195dfb4504e868d82b6a0ce8f6786bc31a9ea13340c4a93"
+        ],
         "extra": "Indizio per la domanda finale: <b>S</b>",
         "picture": "images/2 - Lekythos.jpg",
         "errorMessage": "Ci sono molti lekythos, ma solo uno <i>etrusco</i>: filtra per provenienza"
@@ -124,7 +131,7 @@ const GAME_DATA = {
       "clues": [
         {
           "title": "Cursus publicus",
-          "text": "Sul sito <a href='https://orbis.stanford.edu/' target='_blank'>Stanford ORBIS</a>, trovi una mappa che traccia i tempi di percorrenza di ogni tratta della rete stradale dell’Impero Romano. Spedire una lettera tramite cursus publicus, il servizio postale dell’impero, impiegava già tempi molto brevi. Quanti giorni ci avrebbe messo una lettera ad arrivare da Roma ad Aquinicum tramite questo servizio (<i>horse relay</i> sul sito)?",
+          "text": "Sul sito <a href='https://orbis.stanford.edu/' target='_blank'>Stanford ORBIS</a>, trovi una mappa che traccia i tempi di percorrenza di ogni tratta della rete stradale dell’Impero Romano. Spedire una lettera tramite cursus publicus, il servizio postale dell’impero, impiegava già tempi molto brevi. Quanti giorni ci avrebbe messo una lettera ad arrivare da Roma ad Aquincum tramite questo servizio (<i>horse relay</i> sul sito)?",
           "answer": ["aacf25e52b1347c149a8f355c20d38bb922d4743114e5c5bd9a58b982f47719c", "77065cda8fe1551871ba934cfef4df0f9e8a5f7fb63909b25bf0ccebbe807e18"],
           "extra": "Indizio per la domanda finale: <b>Aristotele</b>",
           "picture": "images/13 - Cursus publicus.jpg",
@@ -164,7 +171,7 @@ const GAME_DATA = {
         },
         {
           "title": "Aristotele",
-          "text": "Sul sito Perseus Catalog cerca il libro indicato negli indizi precedenti, poi vai alla pagina indicata. Quale è la prima parola di questa pagina?",
+          "text": "Sul sito <a href='https://catalog.perseus.org/' target='_blank'>Perseus Catalog</a> cerca il libro indicato negli indizi precedenti, poi vai alla pagina indicata. Quale è la prima parola di questa pagina?",
           "answer": ["de98e5ea566225a14a9a6b3086253f6ddb4b90f537eddbfe582e3f099aae7336"],
           "extra": "&nbsp;",
           "picture": "images/18 - Aristotele.jpg",
@@ -567,7 +574,7 @@ class TreasureHunt {
         localStorage.removeItem('selectedGameId');
         
         // Redirect to games list
-        window.location.href = 'games.html';
+        window.location.href = 'partite/';
     }
 }
 
